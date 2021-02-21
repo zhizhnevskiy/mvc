@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ae78c96-ecb6-4ce1-944d-1d296069fbff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/task01/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task01/databaseconnect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task01/index01.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task01/pdoconfig.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task01/style/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/newEmployee.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +17,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,8 +37,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/task01" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OpenServer\domains\innowise\task01" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -38,6 +56,7 @@
       <updated>1613744107960</updated>
       <workItem from="1613744109070" duration="613000" />
       <workItem from="1613812978449" duration="948000" />
+      <workItem from="1613889112652" duration="5021000" />
     </task>
     <servers />
   </component>
