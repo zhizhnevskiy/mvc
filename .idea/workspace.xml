@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ae78c96-ecb6-4ce1-944d-1d296069fbff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/task01/connectionDB.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task01/selectDB.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task01/PDO.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/insertDB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task01/folder/databaseconnect.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task01/folder/pdoconfig.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task01/index01.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task01/newEmployee.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/newEmployee.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/connectionDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/connectionDB.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +32,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stepHomework" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -66,6 +60,7 @@
       <workItem from="1613904744216" duration="3795000" />
       <workItem from="1613901058920" duration="6277000" />
       <workItem from="1613907698673" duration="3076000" />
+      <workItem from="1613922618504" duration="701000" />
     </task>
     <servers />
   </component>
