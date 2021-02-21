@@ -9,5 +9,5 @@ try {
     $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
-    echo "hi<br>".$e->getMessage() . '<br>';
+    echo $e->getMessage() . '<br>';
 }
