@@ -1,17 +1,5 @@
 <?php
-$serverName = '127.0.0.1';
-$userName = 'root';
-$password = 'root';
-$dbname = 'company_employees';
-
-try {
-    $connection = new PDO("mysql:host=$serverName;dbname=$dbname", $userName, $password);
-    $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-    echo 'Подключено<br>';
-} catch (PDOException $e) {
-    echo "Не подключились" . $e->getMessage() . '<br>';
-}
+require_once "connectionDB.php";
 
 $stmt = $connection->prepare("INSERT INTO employees (firstName, lastName, birth, salary) 
 VALUES (:firstName, :lastName, :birth, :salary)");
@@ -24,6 +12,18 @@ $stmt->execute();
 
 $stmt = $connection->query('SELECT * FROM employees');
 $data = $stmt->fetchAll();
+
+
+
+
+
+
+
+
+
+
+
+
 
 //try {
 //    $sql = 'CREATE DATABASE company_employees';

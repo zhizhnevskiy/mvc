@@ -4,6 +4,7 @@ $ok = true;
 
 if (empty($_POST["firstName"])) {
     $firstNameErr = "First Name is required";
+    $ok = false;
 } else {
     $firstName = test_input($_POST["firstName"]);
     if (!preg_match("/^[a-zа-я-' ]*$/iu", $firstName)) {
@@ -14,6 +15,7 @@ if (empty($_POST["firstName"])) {
 
 if (empty($_POST["lastName"])) {
     $lastNameErr = "Last Name is required";
+    $ok = false;
 } else {
     $lastName = test_input($_POST["lastName"]);
     if (!preg_match("/^[a-zа-я-' ]*$/iu", $lastName)) {
@@ -24,6 +26,7 @@ if (empty($_POST["lastName"])) {
 
 if (empty($_POST["birth"])) {
     $birthErr = "Date of Birth is required";
+    $ok = false;
 } else {
     $birth = test_input($_POST["birth"]);
     $birth = preg_replace("/[^0-9\.]/", "", $birth);
@@ -31,6 +34,7 @@ if (empty($_POST["birth"])) {
 
 if (empty($_POST["salary"])) {
     $salaryErr = "Salary is required";
+    $ok = false;
 } else {
     $salary = test_input($_POST["salary"]);
     $salary = preg_replace("/[^0-9\.]/", "", $salary);
@@ -45,5 +49,7 @@ function test_input($data)
 }
 
 if ($ok) {
-    require_once "PDO.php";
+    require_once "insertDB.php";
+} else {
+    require_once "selectDB.php";
 }

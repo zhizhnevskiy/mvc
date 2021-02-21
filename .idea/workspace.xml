@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ae78c96-ecb6-4ce1-944d-1d296069fbff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/task01/connectionDB.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task01/selectDB.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task01/PDO.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/PDO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task01/databaseconnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/folder/databaseconnect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task01/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/index01.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/PDO.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/insertDB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/folder/databaseconnect.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/folder/pdoconfig.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/index01.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task01/newEmployee.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/newEmployee.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task01/pdoconfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/folder/pdoconfig.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +48,7 @@
       <recent name="D:\OpenServer\domains\innowise\task01" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OpenServer\domains\innowise\task01" />
       <recent name="D:\OpenServer\domains\innowise\task01\folder" />
     </key>
   </component>
@@ -61,7 +64,8 @@
       <workItem from="1613812978449" duration="948000" />
       <workItem from="1613889112652" duration="5021000" />
       <workItem from="1613904744216" duration="3795000" />
-      <workItem from="1613901058920" duration="6024000" />
+      <workItem from="1613901058920" duration="6277000" />
+      <workItem from="1613907698673" duration="3076000" />
     </task>
     <servers />
   </component>

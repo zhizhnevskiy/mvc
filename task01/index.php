@@ -3,7 +3,6 @@
 $firstName = $lastName = $birth = $salary = "";
 $firstNameErr = $lastNameErr = $birthErr = $salaryErr = "";
 require_once "newEmployee.php";
-
 ?>
 
 <!DOCTYPE html>
@@ -56,7 +55,7 @@ require_once "newEmployee.php";
     <tfoot>
     <tr>
         <td colspan="4" style="text-align:right"><b>TOTAL:</b></td>
-        <td><b><?php echo $sum ?></b></td>
+        <td><b><?php echo "$sum" ?></b></td>
     </tr>
     </tfoot>
 
