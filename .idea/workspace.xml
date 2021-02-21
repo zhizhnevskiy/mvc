@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="5ae78c96-ecb6-4ce1-944d-1d296069fbff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task01/databaseconnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/databaseconnect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task01/index01.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task01/pdoconfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/pdoconfig.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/PDO.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/PDO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/databaseconnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/folder/databaseconnect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/index01.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/newEmployee.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/newEmployee.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/pdoconfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/folder/pdoconfig.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stepHomework" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -42,6 +44,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\OpenServer\domains\innowise\task01" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OpenServer\domains\innowise\task01\folder" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -56,6 +61,7 @@
       <workItem from="1613812978449" duration="948000" />
       <workItem from="1613889112652" duration="5021000" />
       <workItem from="1613904744216" duration="3795000" />
+      <workItem from="1613901058920" duration="6024000" />
     </task>
     <servers />
   </component>
@@ -72,5 +78,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -4,47 +4,59 @@ $userName = 'root';
 $password = 'root';
 $dbname = 'company_employees';
 
-//PDO подключение
 try {
-    $connection = new PDO( "mysql:host=$serverName;dbname=$dbname", $userName, $password );
-    $connection->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+    $connection = new PDO("mysql:host=$serverName;dbname=$dbname", $userName, $password);
+    $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     echo 'Подключено<br>';
-} catch ( PDOException $e ) {
-    echo $e->getMessage(). '<br>';
+} catch (PDOException $e) {
+    echo "Не подключились" . $e->getMessage() . '<br>';
 }
 
-try {
-    $sql = 'CREATE DATABASE company_employees';
-    $connection->exec( $sql );
-    echo 'База данных создана <br>';
-} catch ( PDOException $e ) {
-    echo $sql . '<br>' . $e->getMessage(). '<br>';
-}
-//
+$stmt = $connection->prepare("INSERT INTO employees (firstName, lastName, birth, salary) 
+VALUES (:firstName, :lastName, :birth, :salary)");
+$stmt->bindParam(':firstName', $firstName);
+$stmt->bindParam(':lastName', $lastName);
+$stmt->bindParam(':birth', $birth);
+$stmt->bindParam(':salary', $salary);
+
+$stmt->execute();
+
+$stmt = $connection->query('SELECT * FROM employees');
+$data = $stmt->fetchAll();
+
 //try {
-//    $sql1 = "CREATE TABLE MyGuests(
+//    $sql = 'CREATE DATABASE company_employees';
+//    $connection->exec( $sql );
+//    echo 'База данных создана <br>';
+//} catch ( PDOException $e ) {
+//    echo $sql . '<br>' . $e->getMessage(). '<br>';
+//}
+
+//try {
+//    $sql1 = "CREATE TABLE employees(
 //        id INT(9) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 //        firstName VARCHAR(30) NOT NULL,
 //        lastName VARCHAR(30) NOT NULL,
-//        email VARCHAR(50),
-//        reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+//        birth VARCHAR(50),
+//        salary INT(9)
 //        )";
 //    $connection->exec( $sql1 );
-//    echo 'Таблица MyGuests создана успешно<br>';
+//    echo 'Таблица employees создана успешно<br>';
 //} catch ( PDOException $e ) {
 //    echo $sql1 . '<br>' . $e->getMessage() . '<br>';
 //}
-//
+
 //try {
-//    $sql2 = "INSERT INTO MyGuests (firstName, lastName, email)
-//VALUES ('John', 'Doe', 'john@example.com')";
-//    $connection->exec( $sql2 );
+//    $sql = 'INSERT INTO employees (firstName, lastName, birth, salary)
+//VALUES ("$_POST[\'firstName\']", "$_POST[\'lastName\']", "$_POST[\'birth\']", "$_POST[\'salary\']")';
+//    $connection->exec($sql);
 //    $last_id = $connection->lastInsertId();
 //    echo 'Новая запись успешно создана. последний ID: ' . $last_id . '<br>';
-//} catch ( PDOException $e ) {
-//    echo $sql2 . '<br>' . $e->getMessage() . '<br>';
+//} catch (PDOException $e) {
+//    echo $sql . '<br>' . $e->getMessage() . '<br>';
 //}
-//
+
 //try {
 //    $connection->beginTransaction();
 //    $connection->exec( "INSERT INTO myguests (firstName, lastName, email)

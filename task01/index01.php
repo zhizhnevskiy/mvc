@@ -1,16 +1,11 @@
 <?php
-/** @var string $firstName
- * @var string $firstNameErr
- * @var string $lastName
- * @var string $lastNameErr
- * @var string $birth
- * @var string $birthErr
- * @var string $salary
- * @var string $salaryErr
- */
+
+$firstName = $lastName = $birth = $salary = "";
+$firstNameErr = $lastNameErr = $birthErr = $salaryErr = "";
 require_once "newEmployee.php";
 
 ?>
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -28,7 +23,7 @@ require_once "newEmployee.php";
         <h2>Company employees:</h2>
     </caption>
     <tr>
-        <th>№</th>
+        <th>ID</th>
         <th>First Name</th>
         <th>Last Name</th>
         <th>Date of Birth</th>
@@ -37,15 +32,7 @@ require_once "newEmployee.php";
 
     <?php
 
-    $list = [
-        ["1.", 'Александр', 'Высоцкий', '23.03.1985', 1329],
-        ["2.", 'Александр', 'Высоцкий', '23.03.1985', 1329],
-        ["3.", 'Александр', 'Высоцкий', '23.03.1985', 1329],
-        ["4.", 'Александр', 'Высоцкий', '23.03.1985', 1329],
-        ["5.", 'Александр', 'Высоцкий', '23.03.1985', 1329]
-    ];
-
-    foreach ($list as $value1) {
+    foreach ($data as $value1) {
         echo "<tr>";
         foreach ($value1 as $value2) {
             echo "<td>$value2</td>";
@@ -57,12 +44,12 @@ require_once "newEmployee.php";
     {
         $result = 0;
         for ($i = 0; $i < count($array); $i++) {
-            $result += $array[$i][4];
+            $result += $array[$i]['salary'];
         }
         return $result;
     }
 
-    $sum = sum($list);
+    $sum = sum($data);
 
     ?>
 

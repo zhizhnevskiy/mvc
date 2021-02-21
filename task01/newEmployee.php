@@ -5,7 +5,7 @@ $ok = true;
 if (empty($_POST["firstName"])) {
     $firstNameErr = "First Name is required";
 } else {
-    $firstName = test_input($_POST["name"]);
+    $firstName = test_input($_POST["firstName"]);
     if (!preg_match("/^[a-zа-я-' ]*$/iu", $firstName)) {
         $firstNameErr = "Only letters and white space allowed";
         $ok = false;
@@ -26,16 +26,13 @@ if (empty($_POST["birth"])) {
     $birthErr = "Date of Birth is required";
 } else {
     $birth = test_input($_POST["birth"]);
-    if (!preg_match("/^[0-9A-Z_]{5,}@[0-9A-Z]{2,}\.[A-Z]{2,6}$/iu", $birth)) {
-        $birthErr = "Invalid email format";
-        $ok = false;
-    }
+    $birth = preg_replace("/[^0-9\.]/", "", $birth);
 }
 
 if (empty($_POST["salary"])) {
     $salaryErr = "Salary is required";
 } else {
-    $salary = test_input($_POST["phone"]);
+    $salary = test_input($_POST["salary"]);
     $salary = preg_replace("/[^0-9\.]/", "", $salary);
 }
 
@@ -47,15 +44,6 @@ function test_input($data)
     return $data;
 }
 
-if ($ok){
-
+if ($ok) {
+    require_once "PDO.php";
 }
-
-
-
-//if ($ok) {
-//    $row = "\n<----->\n" . $firstName . "\n" . $lastName . "\n" . $birth .
-//        "\n" . $phone .
-//        "\n" . date("d.m.Y") . "\n" . date("H:i");
-//    file_put_contents("contact.txt", $row, FILE_APPEND);
-//}
