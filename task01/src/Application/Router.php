@@ -1,11 +1,13 @@
 <?php
 
 
-namespace FlowLearning\Aplication;
+namespace FlowLearning\Application;
 
 
 class Router
 {
+
+
     public function dispatch(string $path): array
     {
         [
