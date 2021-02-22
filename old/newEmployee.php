@@ -1,5 +1,6 @@
 <?php
 
+
 $ok = true;
 
 if (empty($_POST["firstName"])) {
@@ -50,6 +51,7 @@ function test_input($data)
 
 if ($ok) {
     require_once "insertDB.php";
+    require_once "selectDB.php";
 } else {
     require_once "selectDB.php";
 }

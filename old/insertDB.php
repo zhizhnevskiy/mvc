@@ -1,4 +1,6 @@
 <?php
+
+
 require_once "connectionDB.php";
 
 $stmt = $connection->prepare("INSERT INTO employees (firstName, lastName, birth, salary) 
@@ -10,8 +12,6 @@ $stmt->bindParam(':salary', $salary);
 
 $stmt->execute();
 
-$stmt = $connection->query('SELECT * FROM employees');
-$data = $stmt->fetchAll();
 
 
 

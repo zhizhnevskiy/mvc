@@ -12,7 +12,7 @@ require_once "newEmployee.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>employees</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../task01/public/style/style.css">
 </head>
 
 <body>
@@ -30,6 +30,10 @@ require_once "newEmployee.php";
     </tr>
 
     <?php
+
+class MainTest{
+
+}
 
     foreach ($data as $value1) {
         echo "<tr>";
