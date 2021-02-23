@@ -1,9 +1,9 @@
 <?php
 
-
 namespace FlowLearning;
 
-
+use FlowLearning\Application\Controller\ControllerIndex;
+use FlowLearning\Application\Controller\NotFoundController;
 use FlowLearning\Application\Router;
 
 class Application
@@ -25,22 +25,24 @@ class Application
 
     public function initialize()
     {
-        foreach ($this->config as $array => $path) {
-            print_r($path['path']);
-        }
-        foreach ($this->router as $array => $path) {
-            print_r($path);
-        }
+        $this->router = new Router();
+
+        $this->router
+            ->addRoute('/', [
+                'controller' => ControllerIndex::class,
+                'action' => 'index'
+            ]);
     }
 
     public function handle(string $path): string
     {
-        $segments = trim($path, "/");
-        $segments = explode("/", $path);
-        $this->router = $segments[0];
+        $handler = $this->router->dispatch($path);
 
-        print_r($this->router);
-        $this->initialize();
-        //создать роутер, получить из него маршрут, по маршруту создать контроллер и вызвать экшн
+        $controller = $handler['controller'] ?? NotFoundController::class;
+        $action = $handler['action'] ?? 'index';
+
+        $class = new $controller();
+
+        return $class->$action() ?? '';
     }
 }
