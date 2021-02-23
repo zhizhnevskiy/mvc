@@ -7,7 +7,6 @@ namespace FlowLearning\Application;
 class Router
 {
 
-
     public function dispatch(string $path): array
     {
         [
@@ -16,7 +15,7 @@ class Router
         ];
     }
 
-    public function addRoute(string $way, array $handler): this
+    public function addRoute(string $way, array $handler): self
     {
 
     }
