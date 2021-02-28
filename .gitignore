@@ -1,5 +1,6 @@
 
 .idea/
+<<<<<<< HEAD
 .idea/innowise.iml
 .idea/innowise.iml
 .idea/modules.xml
@@ -9,4 +10,10 @@
 *.iml
 *.xml
 *.xml
+=======
+.idea/workspace.xml
+.idea/workspace.xml
+>>>>>>> 3fad6b04f65953d8f373de953fa0d2c9b86b159a
 *.xml
+*.xml
+.idea/workspace.xml
