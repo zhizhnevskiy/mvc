@@ -1,7 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ae78c96-ecb6-4ce1-944d-1d296069fbff" name="Default Changelist" comment="" />
+    <list default="true" id="5ae78c96-ecb6-4ce1-944d-1d296069fbff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mvc/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc/application/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc/application/controllers/controller_404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc/application/controllers/controller_contacts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc/application/controllers/controller_main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc/application/controllers/controller_portfolio.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc/application/controllers/controller_services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc/application/core/controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc/application/core/model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc/application/core/route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc/application/core/view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc/application/models/model_portfolio.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc/application/views/404_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc/application/views/contacts_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc/application/views/main_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc/application/views/portfolio_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc/application/views/services_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc/application/views/template_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task01/src/Application/Database/Config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task01/src/Application/Entity/Employee.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task01/src/Application/Repository/EmployeeRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task01/test/CheckRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task01/test/DataBase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task01/test/GetDB.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task01/test/SetDB.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task01/test/Singleton/Config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task01/test/Singleton/Logger.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task01/test/Singleton/SingletonDB.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task01/test/Singleton/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task01/views/layouts/base.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task01/views/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/config/autoloader.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/config/autoloader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/src/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/src/Application.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/src/Application/Controller/ControllerBase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/src/Application/Controller/ControllerIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/src/Application/Controller/ControllerIndex.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/src/Application/Controller/NotFoundController.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/src/Application/Controller/NotFoundController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/src/Application/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/src/Application/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/src/Application/View/Plain.php" beforeDir="false" afterPath="$PROJECT_DIR$/task01/src/Application/View/Plain.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/views/mainPage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task01/views/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/task01/views/layouts/style/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +103,8 @@
       <workItem from="1613901058920" duration="6277000" />
       <workItem from="1613907698673" duration="3076000" />
       <workItem from="1613922618504" duration="1288000" />
+      <workItem from="1614584910505" duration="17000" />
+      <workItem from="1614773622596" duration="7000" />
     </task>
     <servers />
   </component>

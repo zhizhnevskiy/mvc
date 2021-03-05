@@ -1,8 +1,6 @@
 <?php
 
-
-namespace FlowLearning\Application;
-
+namespace StandardFlow\Application;
 
 class Router
 {

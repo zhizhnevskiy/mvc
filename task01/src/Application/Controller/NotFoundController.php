@@ -1,8 +1,6 @@
 <?php
 
-
-namespace FlowLearning\Application\Controller;
-
+namespace StandardFlow\Application\Controller;
 
 class NotFoundController extends ControllerBase
 {
