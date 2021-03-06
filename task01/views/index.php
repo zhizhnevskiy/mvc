@@ -28,7 +28,7 @@
 
 <div class="box">
     <form method="POST" action="/add-employee">
-        <b>First Name:</b> <input type="text" name="firstName" value="<?= $_SESSION['employee']['firstName'] ?? '' ?>">
+        <b>First Name:</b> <input type="text" name="firstName" value="<?=$_SESSION['employee']['firstName'] ?? '' //{{ firstName }}?>">
         <span class="error">* <?php if (!empty($_SESSION['errors']['firstNameErr'])) {
                 echo $_SESSION['errors']['firstNameErr'];
             } ?></span>
