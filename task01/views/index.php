@@ -28,17 +28,25 @@
 
 <div class="box">
     <form method="POST" action="/add-employee">
-        <b>First Name:</b> <input type="text" name="firstName" value="<?= $_SESSION['employee']['firstName'] ?>">
-        <span class="error">* <?= $_SESSION['errors']['firstNameErr'] ?></span>
+        <b>First Name:</b> <input type="text" name="firstName" value="<?= $_SESSION['employee']['firstName'] ?? '' ?>">
+        <span class="error">* <?php if (!empty($_SESSION['errors']['firstNameErr'])) {
+                echo $_SESSION['errors']['firstNameErr'];
+            } ?></span>
         <br><br>
-        <b>Last Name:</b> <input type="text" name="lastName" value="<?= $_SESSION['employee']['lastName'] ?>">
-        <span class="error">* <?= $_SESSION['errors']['lastNameErr'] ?></span>
+        <b>Last Name:</b> <input type="text" name="lastName" value="<?= $_SESSION['employee']['lastName'] ?? '' ?>">
+        <span class="error">* <?php if (!empty($_SESSION['errors']['lastNameErr'])) {
+                echo $_SESSION['errors']['lastNameErr'];
+            } ?></span>
         <br><br>
-        <b>Date of Birth:</b> <input type="text" name="birth" value="<?= $_SESSION['employee']['birth'] ?>">
-        <span class="error">* <?= $_SESSION['errors']['birthErr'] ?></span>
+        <b>Date of Birth:</b> <input type="text" name="birth" value="<?= $_SESSION['employee']['birth'] ?? '' ?>">
+        <span class="error">* <?php if (!empty($_SESSION['errors']['birthErr'])) {
+                echo $_SESSION['errors']['birthErr'];
+            } ?></span>
         <br><br>
-        <b>Salary:</b> <input type="text" name="salary" value="<?= $_SESSION['employee']['salary'] ?>">
-        <span class="error">* <?= $_SESSION['errors']['salaryErr'] ?></span>
+        <b>Salary:</b> <input type="text" name="salary" value="<?= $_SESSION['employee']['salary'] ?? '' ?>">
+        <span class="error">* <?php if (!empty($_SESSION['errors']['salaryErr'])) {
+                echo $_SESSION['errors']['salaryErr'];
+            } ?></span>
         <br><br>
         <input type="submit" name="submit" value="Add">
         <br><br>

@@ -28,17 +28,16 @@ class Plain implements ViewInterface
      * Plain constructor.
      * @param string $layoutsDir
      * @param string $viewsDir
+     * @throws Exception
      */
     public function __construct(string $layoutsDir, string $viewsDir)
     {
 
-        if (file_exists($layoutsDir)) {
-        } else {
+        if (!file_exists($layoutsDir)) {
             throw new Exception('Layout directory not found! ');
         }
 
-        if (file_exists($viewsDir)) {
-        } else {
+        if (!file_exists($viewsDir)) {
             throw new Exception('Views directory not found! ');
         }
 
@@ -46,12 +45,14 @@ class Plain implements ViewInterface
         $this->viewsDir = $viewsDir;
     }
 
+    /**
+     * @throws Exception
+     */
     public function setLayout(string $layoutName): self
     {
         $path = implode(DIRECTORY_SEPARATOR, [$this->layoutsDir, $layoutName . '.php']);
 
-        if (file_exists($path)) {
-        } else {
+        if (!file_exists($path)) {
             throw new Exception('Layout not found! ');
         }
 
@@ -60,12 +61,14 @@ class Plain implements ViewInterface
         return $this;
     }
 
+    /**
+     * @throws Exception
+     */
     public function render(string $viewName, array $parameters = []): string
     {
         $path = implode(DIRECTORY_SEPARATOR, [$this->viewsDir, $viewName . '.php']);
 
-        if (file_exists($path)) {
-        } else {
+        if (!file_exists($path)) {
             throw new Exception('View not found!');
         }
 
