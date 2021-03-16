@@ -7,7 +7,7 @@ define('PROJECT_DIR', dirname(__DIR__));
 define('SRC_DIR', PROJECT_DIR . DIRECTORY_SEPARATOR . 'src');
 define('PSR4_PREFIX', 'StandardFlow');
 
-require_once PROJECT_DIR. '/config/autoloader.php';
+require_once PROJECT_DIR . '/config/autoloader.php';
 //require_once implode(DIRECTORY_SEPARATOR, [PROJECT_DIR, 'config', 'autoloader.php']);
 
 $config = require_once PROJECT_DIR . '/config/config.php';
